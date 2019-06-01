@@ -1,28 +1,33 @@
 public class Calculator {
 
-    public static void Calculation(double num_1, double num_2, char operator) {
+    static double answer;
 
-        double answer = 0;
+    public static String[] calculations = {"Addition", "Subtraction", "Multiplication", "Division", "Modulus",
+            "Exponentiation", "Square Root" };      // best practice for long array code?
 
-        switch (operator) {
-            case '+':
-                answer = num_1 + num_2;
-                break;
-            case '-':
-                answer = num_1 - num_2;
-                break;
-            case '*':
-                answer = num_1 * num_2;
-                break;
-            case '/':
-                answer = num_1 / num_2;
-                break;
-            case '%':
-                answer = num_1 % num_2;
-                break;
-        }
+    public static void Addition(double num_1, double num_2){
+        answer = num_1 + num_2;
+        System.out.println(num_1 " + " num_2 " = " + answer);
+    }
 
-        System.out.println("The calculation is: " + num_1 + " " + operator + " " + num_2 + " = " + answer);
+    public static void Subtraction(double num_1, double num_2){
+        answer = num_1 - num_2;
+        System.out.println(num_1 " - " num_2 " = " + answer);
+    }
+
+    public static void Multiplication(double num_1, double num_2){
+        answer = num_1 * num_2;
+        System.out.println(num_1 " x " num_2 " = " + answer);
+    }
+
+    public static void Division(double num_1, double num_2){
+        answer = num_1 / num_2;
+        System.out.println(num_1 " ÷ " num_2 " = " + answer);
+    }
+
+    public static void Modulus(double num_1, double num_2){
+        answer = num_1 % num_2;
+        System.out.println("The remainder of " + num_1 + " ÷ " + num_2 +  " is: " + answer);
     }
 
     public static void Exponentiation(double num_1, double num_2){
@@ -30,5 +35,12 @@ public class Calculator {
         double answer = Math.pow(num_1, num_2);
 
         System.out.println(num_1 + " to the power of " + num_2 + " is: " + answer);
+    }
+
+    public static void SquareRoot(double num){
+
+        double answer = Math.sqrt(num);
+
+        System.out.println("The square root of " + num + " is: " + answer);
     }
 }

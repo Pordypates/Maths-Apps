@@ -6,8 +6,10 @@ public class Application {
         System.out.println("================");
         Calculator.Calculation(2, 4, '+');      // addition
         Calculator.Calculation(62, 28, '-');    // subtraction
-        Calculator.Calculation(14, 10, '*');   // multiplication
+        Calculator.Calculation(14, 10, '*');    // multiplication
         Calculator.Calculation(100, 10, '/');   // division
+        Calculator.Calculation(6, 2, '%');      // modulus (remainder)
+        Calculator.Exponentiation(14, 2);                              // exponentiation (power of)
 
         System.out.println("Less than / More than / Equal to tests");
         System.out.println("================");

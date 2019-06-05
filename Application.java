@@ -50,8 +50,9 @@ public class Application {
         Calculator.Calculation(14, 10, '*');    // multiplication
         Calculator.Calculation(100, 10, '/');   // division
         Calculator.Calculation(6, 2, '%');      // modulus (remainder)
-        Calculator.Exponentiation(14, 2);                              // exponentiation (power of)
-        Calculator.SquareRoot(4);                                // square root
+        Calculator.Exponentiation(14, 2);       // exponentiation (power of)
+        Calculator.SquareRoot(4);               // square root
+        Calculator.Factorial(5);                // factorial                
 
         System.out.println("Less than / More than / Equal to tests");
         System.out.println("================");

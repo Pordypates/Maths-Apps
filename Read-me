@@ -5,6 +5,6 @@ This is a small application that provides basic maths functions for the purpose 
 
 Features include: 
 
-  - Calculator (Addition, Subtraction, Multiplication & Division)
+  - Calculator (Addition, Subtraction, Multiplication, Division, Modulus, Exponentiation & Square Root)
   - Even or Odd number determiner
   - Less than / More than determiner

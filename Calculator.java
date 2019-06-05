@@ -3,7 +3,7 @@ public class Calculator {
     static double answer;
 
     public static String[] calculations = {"Addition", "Subtraction", "Multiplication", "Division", "Modulus",
-            "Exponentiation", "Square Root" };      // best practice for long array code?
+            "Exponentiation", "Square Root", "Factorial" };      // best practice for long array code?
 
     public static void Addition(double num_1, double num_2){
         answer = num_1 + num_2;
@@ -43,4 +43,17 @@ public class Calculator {
 
         System.out.println("The square root of " + num + " is: " + answer);
     }
+    
+    public static void Factorial(int num){
+
+        int answer=1;
+        if(num>0)
+        {
+            for (int i = num; i > 0; i--) {
+                answer=answer*i;
+            }
+        }
+        System.out.println("The factorial of " + num + " is: " + answer);
+    }
+    
 }

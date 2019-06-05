@@ -42,5 +42,20 @@ public class Calculator {
         double answer = Math.sqrt(num);
 
         System.out.println("The square root of " + num + " is: " + answer);
+        
+        
+    public static void Factorial(int num){
+
+        int answer=1;
+        if(num>0)
+        {
+            for (int i = num; i > 0; i--) {
+                answer=answer*i;
+            }
+        }
+        System.out.println("The factorial of " + num + " is: " + answer);
+    }
+        
+        
     }
 }

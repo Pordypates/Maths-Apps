@@ -1,0 +1,34 @@
+import org.hamcrest.CoreMatchers;
+import org.junit.Test;
+import org.junit.Assert;
+
+public class BasicCalculatorTest {
+
+    @Test
+    public void testAddition() throws Exception {
+
+        int a_test = BasicCalculator.Addition(2, 4);
+        Assert.assertThat(a_test, CoreMatchers.is(5));      // failed test
+    }
+
+    @Test
+    public void testSubtraction() throws Exception {
+
+        int s_test = BasicCalculator.Subtraction(78, 13);
+        Assert.assertThat(s_test, CoreMatchers.is(65));     // succeeded test
+    }
+
+    @Test
+    public void testMultiplication() throws Exception {
+
+        int m_test = BasicCalculator.Multiplication(15, 100);
+        Assert.assertThat(m_test, CoreMatchers.is(15000));      // failed test
+    }
+
+    @Test
+    public void testDivision() throws Exception {
+
+        int m_test = BasicCalculator.Division(25, 5);
+        Assert.assertThat(m_test, CoreMatchers.is(5));      // succeeded test
+    }
+}

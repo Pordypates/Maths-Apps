@@ -1,8 +1,12 @@
 import java.util.Scanner;
 
+import java.util.Arrays;
+
 public class Application {
 
     static String mode = "Default";
+
+    static String[] modes = {"Calculator", "Even or Odd", "Less And More"};
 
     public static void ModeSelect(){
 
@@ -31,37 +35,17 @@ public class Application {
 
         while (mode == "Default") {
             System.out.println("Please select the mode you wish to use from the following: ");
-            System.out.println("Calculator");
-            System.out.println("Even or Odd");
-            System.out.println("Less and More");
+            System.out.println(Arrays.toString(modes));
             mode = myObj.nextLine();
             ModeSelect();
         }
 
         if (mode == "Calculator") {
-            System.out.println("Please select the calculation from the following: ");
-            System.out.println(Arrays.toString(Calculator.calculations));
+            Calculator.CalculationSelect();
         }
 
-        /* System.out.println("Calculator tests");
-        System.out.println("================");
-        Calculator.Calculation(2, 4, '+');      // addition
-        Calculator.Calculation(62, 28, '-');    // subtraction
-        Calculator.Calculation(14, 10, '*');    // multiplication
-        Calculator.Calculation(100, 10, '/');   // division
-        Calculator.Calculation(6, 2, '%');      // modulus (remainder)
-        Calculator.Exponentiation(14, 2);                              // exponentiation (power of)
-        Calculator.SquareRoot(4);                                // square root
-
-        System.out.println("Less than / More than / Equal to tests");
-        System.out.println("================");
-        LessAndMore.LessOrMore(4, 1);       // more than
-        LessAndMore.LessOrMore(32, 60);     // less than
-        LessAndMore.LessOrMore(130, 130);   // equal to
-
-        System.out.println("Even / Odd number tests");
-        System.out.println("================");
-        EvenOdd.EvenOrOdd(48);
-        EvenOdd.EvenOrOdd(17); */
+        if (mode == "Even or Odd") {
+            EvenOdd.EvenOrOdd();
+        }
     }
 }

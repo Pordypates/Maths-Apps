@@ -1,0 +1,27 @@
+public class BasicCalculator {
+
+    static int num_1;
+    static int num_2;
+    static int answer;
+
+    public static int Addition(int num_1, int num_2) {
+        answer = num_1 + num_2;
+        return answer;
+    }
+
+    public static int Subtraction(int num_1, int num_2) {
+        answer = num_1 - num_2;
+        return answer;
+    }
+
+    public static int Multiplication(int num_1, int num_2) {
+        answer = num_1 * num_2;
+        return answer;
+    }
+
+    public static int Division(int num_1, int num_2) {
+        answer = num_1 / num_2;
+        return answer;
+    }
+
+}
